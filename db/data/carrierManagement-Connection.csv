@@ -1,0 +1,21 @@
+ID;connectionId;cityFrom;cityTo;airportFrom;airportTo;carrier_ID
+96fbea6c-e09c-47c5-ad43-651412b5a03f;connec3362;New York;London;JFK;Heathrow;1ffe41ef-a8cd-4781-982a-fc73591ec056
+aed7af58-48a1-493e-8abd-d1a7fd803851;connec9688;Tokyo;Paris;Narita;Charles de Gaulle;f169cae2-5f09-4592-aa5c-afd3bc3b648d
+7fd602da-a774-401e-8a9d-d0b6d02280c1;connec6189;Sydney;Beijing;Kingsford Smith;Capital International;2bd5bf37-6f38-440a-98d5-ff924a103d85
+bfb56984-6ac8-4686-843b-fcd14c0bd7ff;connec8239;Berlin;New Delhi;Tegel;Indira Gandhi International;41ab7e26-21d5-4d98-987c-a64fc0635eff
+b2955c0d-f7ee-4d08-a818-bc614772204a;connec8165;Dubai;Toronto;Dubai International;Pearson;27beae1e-0e59-479d-b8c1-dc07add5e845
+84c64913-0982-49ce-92d4-ab9890ad8ca6;connec3037;Los Angeles;Rome;LAX;Fiumicino;c3c87b06-d706-47ee-9bb6-2b521b6035ff
+67a3ab36-21aa-4b60-82ae-1c674b003c4c;connec9168;Moscow;Cape Town;Sheremetyevo;Cape Town International;17320d88-647f-40c6-a63b-d0add37c28f4
+867c9ed0-0cdd-4d2f-8d47-4b2a49cc5e6e;connec7246;Madrid;Tokyo;Barajas;Narita;27beae1e-0e59-479d-b8c1-dc07add5e845
+fc71905b-8527-47de-8f05-f65f1b0db7e7;connec6365;Hong Kong;Sydney;Hong Kong International;Kingsford Smith;b8c645d2-4caa-496e-982c-ee30bd405c6b
+eff89784-2181-4da8-be6e-76bde02505aa;connec4956;Paris;New York;Charles de Gaulle;JFK;41ab7e26-21d5-4d98-987c-a64fc0635eff
+19e7640a-16d1-44cd-972d-5689d34f19a8;connec6423;cityFrom4791;cityTo8624;airportFrom2645;airportTo3476;c3c87b06-d706-47ee-9bb6-2b521b6035ff
+156356a2-8f8a-445c-acab-bb38720ea90e;connec9039;cityFrom8129;cityTo685;airportFrom4973;airportTo6581;f9b99f05-8722-41ff-8d00-0a6b8153fd36
+df436948-575a-4c4b-8507-8af9c13a4b77;connec8369;cityFrom3731;cityTo7201;airportFrom3217;airportTo6102;c3c87b06-d706-47ee-9bb6-2b521b6035ff
+20d062b2-0331-49a4-8e94-9e80e13dc284;connec9660;cityFrom388;cityTo4175;airportFrom1522;airportTo5034;f9b99f05-8722-41ff-8d00-0a6b8153fd36
+ed5a6b5f-f5b4-4e77-a348-b0d3b923bd64;connec939;cityFrom5513;cityTo6156;airportFrom2538;airportTo3477;b8c645d2-4caa-496e-982c-ee30bd405c6b
+3d578fa0-2eea-43d6-82a9-eb7e627ae395;connec6290;cityFrom6327;cityTo284;airportFrom7471;airportTo2157;17320d88-647f-40c6-a63b-d0add37c28f4
+01bbf99e-a3cf-4602-8d5c-57aca87bb63c;connec6733;cityFrom4180;cityTo6266;airportFrom9735;airportTo6963;f169cae2-5f09-4592-aa5c-afd3bc3b648d
+898639a4-f120-4441-9546-0034c6381b9b;connec9155;cityFrom831;cityTo447;airportFrom7264;airportTo3419;2bd5bf37-6f38-440a-98d5-ff924a103d85
+06c5e32a-046f-45e4-9392-19562f3b1709;connec6394;cityFrom4695;cityTo319;airportFrom4823;airportTo961;fb61a0b8-6023-4ddc-a2c2-0de23556fe1b
+c2b99730-9073-45db-89da-9c1184922135;connec8200;cityFrom6353;cityTo7112;airportFrom8635;airportTo3433;17320d88-647f-40c6-a63b-d0add37c28f4
