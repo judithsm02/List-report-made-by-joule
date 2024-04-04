@@ -1,0 +1,174 @@
+{
+  "_version": "1.48.0",
+  "sap.app": {
+    "id": "carrier.carriermanagement",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:lrop",
+      "version": "1.13.1",
+      "toolsId": "faa793b4-28d8-4700-8e26-4724a668e004"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/service/carrierManagement/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "odataVersion": "4.0"
+        }
+      }
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "carriercarriermanagement-display": {
+          "semanticObject": "carriercarriermanagement",
+          "action": "display",
+          "title": "{{flpTitle}}",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.108.7",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.ushell": {},
+        "sap.fe.templates": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "carrier.carriermanagement.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "synchronizationMode": "None",
+          "operationMode": "Server",
+          "autoExpandSelect": true,
+          "earlyRequests": true
+        }
+      },
+      "@i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "uri": "i18n/i18n.properties"
+      }
+    },
+    "resources": {
+      "css": []
+    },
+    "routing": {
+      "config": {},
+      "routes": [
+        {
+          "pattern": ":?query:",
+          "name": "CarrierList",
+          "target": "CarrierList"
+        },
+        {
+          "pattern": "Carrier({key}):?query:",
+          "name": "CarrierObjectPage",
+          "target": "CarrierObjectPage"
+        },
+        {
+          "pattern": "Carrier({key})/connections({key2}):?query:",
+          "name": "ConnectionObjectPage",
+          "target": "ConnectionObjectPage"
+        }
+      ],
+      "targets": {
+        "CarrierList": {
+          "type": "Component",
+          "id": "CarrierList",
+          "name": "sap.fe.templates.ListReport",
+          "controlAggregation": "beginColumnPages",
+
+          "options": {
+            "settings": {
+              "contextPath": "/Carrier",
+              "variantManagement": "Page",
+              "navigation": {
+                "Carrier": {
+                  "detail": {
+                    "route": "CarrierObjectPage"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "CarrierObjectPage": {
+          "type": "Component",
+          "id": "CarrierObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/Carrier",
+              "navigation": {
+                "connections": {
+                  "detail": {
+                    "route": "ConnectionObjectPage"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ConnectionObjectPage": {
+          "type": "Component",
+          "id": "ConnectionObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/Carrier/connections"
+            }
+          }
+        }
+      }
+    }
+  },
+  "sap.fiori": {
+    "registrationIds": [],
+    "archeType": "transactional"
+  }
+}
